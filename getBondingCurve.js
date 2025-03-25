@@ -15,9 +15,12 @@ const {
 require("dotenv").config();
 
 const getBondingCurve = async () => {
+<<<<<<< HEAD
   // const connection = new Connection(process.env.RPC_URL || "", "confirmed");
 
   // Specify maxSupportedTransactionVersion in the connection configuration
+=======
+>>>>>>> faeec5ca35eee68292c202c24caa72adc80ba7c8
   const connection = new Connection(process.env.RPC_URL || "", {
     commitment: "confirmed",
     maxSupportedTransactionVersion: 0,
@@ -77,7 +80,11 @@ const getTokenCreationDate = async () => {
         maxSupportedTransactionVersion: 0,
       }
     );
+<<<<<<< HEAD
     console.log({ transactionDetails });
+=======
+
+>>>>>>> faeec5ca35eee68292c202c24caa72adc80ba7c8
     if (transactionDetails && transactionDetails.blockTime) {
       console.log(
         `Token Creation Timestamp:`,
